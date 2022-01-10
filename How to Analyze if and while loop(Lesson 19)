@@ -1,0 +1,36 @@
+WHILE LOOP
+x = 1;                           
+while(x < y)
+{
+statement;
+x = x *2;
+}
+
+
+EXPLANATION 
+
+x
+____________
+1
+1*2=2
+2*2=2^2
+2^2 * 2= 2^3
+|
+|
+|
+|
+|
+2^a
+NB: Note that it will terminate when x >= y
+x = 2^a
+You can then say:
+2^a >= y
+2^a = y
+a = log2(y)  That's log y base 2
+
+Therefore, time complexity is O(logn)
+
+
+
+
+Share this:
