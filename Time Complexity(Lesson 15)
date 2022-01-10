@@ -1,0 +1,24 @@
+y = 0;
+for(a = 1; a < n; a = a * 2)
+{
+y++;
+}
+for(b = 1; b < y; b = b *2)
+{
+statement;
+
+}
+Explanation
+
+y = 0;
+for(a = 1; a < n; a = a * 2)
+{
+y++;----------------------- logn 
+}
+for(b = 1; b < y; b = b *2) ------- logy since ( b is multiplying by 2 every time)
+{
+statement;
+
+}
+since y = logn, substituting it in logy, will give loglogn.
+Therefore, time complexity is O(loglogn)
