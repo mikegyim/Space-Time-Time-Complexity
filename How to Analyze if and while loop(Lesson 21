@@ -1,0 +1,19 @@
+Algorithm Test(n)
+{
+if(n<8)
+{
+cout << n << endl;--------  1
+}
+else
+{
+for(i = 0; i < n; i++)
+{
+cout<< i << endl; ------- n
+}
+}
+}
+If the condition is true, then it will execute just one statement so the time is O(1)
+If the condition is false, meaning when its greater than 5, then it's going to repeat for n times so the time is O(n).
+Therefore,
+O(1) is the best case time
+O(n) is the worst case time
