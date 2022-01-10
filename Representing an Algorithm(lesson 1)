@@ -1,0 +1,6 @@
+Algorithm  swap(c,d)
+{
+name = a;
+a = b;
+b = name;
+}
