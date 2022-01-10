@@ -1,0 +1,28 @@
+for(a = n; a >= 1; a = a/2)
+{
+statement;
+
+}
+
+Explanation
+a starts from n
+a
+_______________
+n
+n/2
+n/2^2
+n/2^3
+|
+|
+|
+|
+| 
+n/2^y time 
+ (NB, we don't know how many times so we use 2^y to represent the number of time)
+
+Assume a has become less than one, a < 1,
+Therefore, n/2^y < 1
+>>>> n/2^y = 1
+>>>> n = 2^y
+>>>> y = log2(n)( log n base 2)
+The time complexity is O(log2(n))
