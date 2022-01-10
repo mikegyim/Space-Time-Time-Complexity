@@ -1,0 +1,11 @@
+classes of functions in increasing order
+1 < longn < √n < n < nlogn < n2 < n^3 < --------- < 2^n  < 3^n------ < n^n
+
+PROOF
+
+logn             n        n^2        2^n
+_________________________________________
+0                 1         1         2
+log2(2) = 1        2         4          4
+2                  4         16          16
+3                  8         64          256
