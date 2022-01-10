@@ -1,0 +1,37 @@
+Algorithm  swap(c,d)
+{
+name = a;
+a = b;
+b = name;
+}
+
+TIME ANALYSIS
+Every simple statement in an algorithm takes 1 unit of time. 
+Therefore,
+name = a; --------- takes 1 unit of time
+a = b; ------------- takes 1 unit of time
+b = name; ----------- takes 1 unit of time
+Therefore, time function, f(n) = 3
+NOTE: Lets say instead of the 'name = a', we have something like ' x = 6*b+7*c, we still say that 'x = 6*b+7*c' takes 1 unit of time. But when you critically look at the equation, ' x= 6*b+7*c', you notice that it has more than one statements. The two multiplications(*) are two statements, the plus sign(+), one statement and we also have the assignment statement(=). Therefore, it has 4 statements in total. But we don't want to see how it is going to be calculated into machine code and therefore we simple says that the whole statement takes one unit of time.  
+
+
+
+
+SPACE ANALYSIS
+Algorithm  swap(c,d)
+{
+name = a;
+a = b;
+b = name;
+}
+Space Analysis
+NB: It is basically about how many variables use.
+the variables are;
+a ----- 1
+b ----- 1
+name ------ 1
+There, the space, s(n) = 3
+
+Since both of s(n) and f(n) are constant, 
+s(n) is O(1) and f(n) is also O(1).
+If it is 3, if it is 3000, we write 1. The value is constant.
