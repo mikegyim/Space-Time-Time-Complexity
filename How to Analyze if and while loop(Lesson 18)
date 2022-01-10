@@ -1,0 +1,33 @@
+WHILE
+
+a = 0; -------------  1
+while(a < n)----------- n+ 1
+{
+statement;------------  n
+a++;------------------ n
+}
+
+          f(n) = 3n + 2
+
+              O(n)
+
+
+
+FOR
+for(a = 0; a < n; a++) --------   
+{
+statement;
+}
+
+NB: From the previous lessons, we learned that
+a = 0---- 1, a<n----- n + 1, a++ ---- n, total 2n + 2. But instead of using 2n + 2, we can just use n+1.
+
+for(a = 0; a < n; a++) --------   2n + 2 or n+ 1
+{
+statement;------------------   n 
+}
+f(n) = 3n + 2   
+or
+f(n) = 2n + 1
+
+                           O(n)
