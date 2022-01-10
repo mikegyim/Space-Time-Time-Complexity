@@ -1,0 +1,10 @@
+for (a = 0; a * a < n; a++) 
+{
+statement;
+}
+
+Explanation
+a * a < n
+But Determining a * a >= n
+We assume that a^2 = n 
+Therefore, a = √n
