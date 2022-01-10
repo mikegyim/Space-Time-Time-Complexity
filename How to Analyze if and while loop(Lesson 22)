@@ -1,0 +1,15 @@
+Algorithm Test(n)
+{
+if(n>8)
+
+{
+for(i = 0; i < n; i++)
+{
+cout<< i << endl; ------- n
+}
+}
+}
+
+This will execute for n time
+O(n)
+NB: There is no maximum or minimum, there is no worst case or best case
