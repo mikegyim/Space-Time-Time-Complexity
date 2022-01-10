@@ -1,0 +1,24 @@
+for(c=1; c<n; c=c*2)
+{
+statement;
+}
+
+Explanation 
+c     
+1
+1*2 = 2
+2*2 = 2²
+2² * 2 = 2³
+|
+|
+|
+|
+|
+ 2^y ( We don't know how many times this will go on. So lets say it will go on for 2^y  time) 
+
+Assume c became greater than or equal to n ------------- c >=n
+And since c = 2^y
+2^y >= n
+So if 2^y = n
+Then y = log n base 2  ----------- log2n
+Therefore time complexity will be O(log2n)   
