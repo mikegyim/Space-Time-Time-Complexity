@@ -1,0 +1,36 @@
+while(a != b)
+{
+if(a > b)
+a = a - b;
+else
+b = b - a;
+}
+
+EXPLANATION
+Remember the conditions: a != b. if(a>b), a = a - b. else b = b - a
+instance 1
+a         b
+_____________          a = a - b
+6         3
+3         3  ----- Now they became equal. This executed only one time
+
+
+instance 2
+a          b
+______________
+5          5       ----- The initial values are equal so execution is zero(0) time 
+
+
+instance 3
+a         b
+_______________
+16        2
+14        2
+10        2
+8         2
+6          2
+4          2
+2          2
+The execution time for the above is 7 times, which is almost 16/2 times(8).  So it means it will execute n/2 time.
+Therefore, the maximum time taken by this algorithm is O(n)
+The minimum time is 0(1)
