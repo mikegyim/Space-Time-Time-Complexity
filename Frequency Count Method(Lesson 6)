@@ -1,0 +1,60 @@
+Algorithm Multiply(C, D, n)
+{
+for(i = 0; i<n; i++) -------   n+1
+{
+for(j = 0; j < n; j++) ------ n*( n+1)
+{
+E[i, j] = 0; ------------   n*n
+for(p = 0; p<n; p++) ------- n*n*(n+1)
+{
+E[i, j] = E[i, j] + C[i, p]*D[p,j];--------- n*n*n
+}
+}
+}
+}
+
+Time Complexity, f(n) = 2n^3 + 3n^2 + 2n +1     which is O(n^3)
+
+
+EXPLANATION:
+'for(i = 0; i<n; i++)' is a loop so it has n+1 time. Everything inside the loop, 'for(i = 0; i<n; i++)' has n time, therefore, 'for(j = 0; j < n; j++), E[i, j] = 0, for(p = 0; p<n; p++) and E[i, j] = E[i, j] + C[i, p]*D[p,j] ' has n time. 
+'for(j = 0; j < n; j++)' is loop so it has additional n+1 time, making its total time to be n*(n+1).
+'E[i, j] = 0, for(p = 0; p<n; p++), E[i, j] = E[i, j] + C[i, p]*D[p,j]' are inside the the loop, 'for(j = 0; j < n; j++)'. So they all get additional n time since anything inside a loop gets n time. Therefore;
+
+E[i, j] = 0 ---------- n*n , making it total time
+for(p = 0; p<n; p++) ----------- n*n
+E[i, j] = E[i, j] + C[i, p]*D[p,j] -------- n*n
+
+Finally, 'for(p = 0; p<n; p++)' is loop so it has additional n+1 time, making it total time to be n*n*(n+1), since loop has n+1 time.
+And again, anything inside the loop has n time. The total time for 'E[i, j] = E[i, j] + C[i, p]*D[p,j]'  is n*n*n since it is inside the loop, 'for(p = 0; p<n; p++)' so it gets additional n time.   
+
+Algorithm Multiply(C, D, n)
+{
+for(i = 0; i<n; i++) -------   n+1
+{
+for(j = 0; j < n; j++) ------ n*( n+1)
+{
+E[i, j] = 0; ------------   n*n
+for(p = 0; p<n; p++) ------- n*n*(n+1)
+{
+E[i, j] = E[i, j] + C[i, p]*D[p,j];--------- n*n*n
+}
+}
+}
+}
+
+Time Complexity, f(n) = 2n^3 + 3n^2 + 2n +1     which is O(n^3)
+
+
+
+SPACE COMPLEXITY
+C, D, E are matrices and n, i, j, p are simple variables
+C --- n^2
+D ---- n^2
+E ------ n^2
+n ---- 1
+i -----1
+j ----- 1
+p ----- 1
+
+space complexity, s(n) = 3n^2  + 4   which is 0(n^2)
