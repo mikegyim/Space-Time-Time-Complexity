@@ -1,0 +1,29 @@
+for(a = 0; a < n; a++)
+{
+for(b = 1; b < n; b = b * 2)
+{
+statement;
+}
+}
+
+Explanation
+
+for(a = 0; a < n; a++)----------- n( or you can use n+1. It doesn't change anything)
+{
+for(b = 1; b < n; b = b * 2)-------- n
+{
+statement;-------------------- n
+}
+}
+
+Because b takes 1 and b is less than n and b is multiplying by 2, that loop takes logn time and anything inside that loop also takes logn time
+for(a = 0; a < n; a++)----------- n
+{
+for(b = 1; b < n; b = b * 2)-------- n * log n  
+{
+statement;-------------------- n * logn
+}
+}
+                               2nlogn + n
+
+Therefore, the time complexity is O(nlogn)
