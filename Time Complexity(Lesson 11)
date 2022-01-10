@@ -1,0 +1,43 @@
+for( a= 1; a<n; a= a*2)                 for(a= 1; a <= n; a++) 
+                                          {                                     
+{                                          statement;
+statement;
+}                                          }   
+
+i = 1*2*2*2 ------= n                       a = 1+1+1+1-------- +n
+2^y = n 
+ y = log2n(log n base 2)                    y = n
+
+So if you get a loop like the above where the value of a is getting multiplied, it is gonna be logn time.
+
+
+
+for(a= 1; a<n; a=a*2)
+{
+statement; --------- logn 
+}
+Note that logn value will either give a single value or a  float value   
+                                
+Lets say n = 10  (remember a<n and a=a*2 and a begins with 1). Therefore
+a
+___________________
+1
+2
+4
+8
+16    --------- They are all less than n = 10 except 16 so it stops at 16. So it executes 4 times
+
+Lets say n = 8   (remember a<n and a=a*2 and a begins with 1). Therefore
+a
+__________________
+1
+2
+4
+8----------- They are all less than n =8 except 8 so it stops at 8. So it executes 3 times
+
+For the first  one;
+log10 
+log2(10) 
+log2(2*5)
+3.3
+which is approximately the same number as the execution time, 4. 
