@@ -1,0 +1,51 @@
+1) for(c=0; c<n; c++)-------- n+1
+{
+statement; ------- n
+}
+
+We know that for(c=0; c<n; c++) ----------  n+1 time and statement; ---------- n time
+When you add the two times, n+1 + n = 2n + 1 which is O(n).
+
+Instead of adding, you can simple ignore the time for the loop, n+1 and use the time for the statement, which is n, still making the time complexity to be O(n).
+
+
+
+2) for(c=n; c>o; c--)
+{
+statement;
+}
+
+Ignore the time for the loop and use the time for the statement
+for(c=n; c>o; c--)
+{
+statement;  ------- n
+}
+Therefore the time complexity is O(n)
+
+
+
+3) for( c= 1; c<n; c = c + 2)
+{
+statement;   
+}
+
+Ignore the time for the loop and use the time for the statement
+for( c= 1; c<n; c = c + 2)
+{
+statement;   ----------- n/2
+}
+Therefore, time complexity is O(n)
+
+
+
+4) for( c= 1; c<n; c = c + 20)
+{
+statement;    ------- n/20
+}
+
+Therefore, time complexity is O(n)
+
+NB: Though the f(n) = n/2 and f(n) = n/20 for example 3 and 4 respectively, the time complexity is still O(n). 
+When you are given f(n) = n/20 and you are asked what is the degree is polynomial?
+The degree of polynomial is n only so it doesn't matter the denominator. 
+Therefore, time complexity for such cases will be O(n).
