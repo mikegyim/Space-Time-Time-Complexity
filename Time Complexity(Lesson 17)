@@ -1,0 +1,6 @@
+for(a = 0; a < n; a++)---------- O(n)
+for(a = 0; a < n; a = a + 2) -------- n/2 O(n)
+for(a = n; a > 1; a--)---------- O(n)
+for(a = 1; a < n; a = a * 2)-------  O(log2(n)) That's log n base 2
+for(a = 1; a < n; a = a * 3)--------- O(log3(n)) that's log n base 3
+for(a = n; a > 1; a = a/2) ---------- O(log2(n)) 
