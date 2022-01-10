@@ -1,0 +1,6 @@
+Algorithm can be analyzed by :
+1.  Time
+This is about how much time the algorithm is taken. It shows whether the procedure is time consuming or is very fast and quick. And that time is in the form of a function, TIME FUNCTION. 
+
+2.Space
+Since the algorithm is going to be converted into a program and run on a machine, we need to know how much memory space it will consume. 
