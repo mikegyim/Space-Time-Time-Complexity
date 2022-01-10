@@ -1,0 +1,7 @@
+TYPES OF TIME FUNCTIONS
+O(1) -------  constant  eg: f(n) = 2
+O(logn) ------- logarithemic
+O(n) ------- Linear eg: f(n) = 2n + 3
+O(n^2) ----- Quadratic 
+O(n^3) ------ cubic 
+O(2^n) ---- Exponential
