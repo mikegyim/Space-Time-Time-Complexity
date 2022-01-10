@@ -1,0 +1,43 @@
+a = 1;
+b = 1
+while(b<n)
+{
+statement;
+b = b+a;
+a++;
+}
+
+EXPLANATION
+a starts at 1 and b starts at 1. b = b +a  and a is a++.
+a            b
+___________________
+1            1
+2            2(1+1)
+3            2 + 2
+4            2+ 2+ 3
+5            2+ 2+ 3 + 4
+              |
+              |
+              |
+             2+2+3+4+ ------ + z
+  If you make the first number 2    1, it will be
+1+2+3+4+------- +  z  >>>>>>>>  z(z+1)/2
+if b>=n
+z(z+1)/2 >=n
+This is roughly ;
+z^2 = n
+z = √n
+
+O(√n)
+
+
+
+
+
+NB:
+The above while loop can be written with  for loop
+for(a = 1; b = 1; b < n; a++)
+{
+statement;
+b = b + a;
+}
