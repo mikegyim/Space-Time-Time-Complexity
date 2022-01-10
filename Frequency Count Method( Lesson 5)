@@ -1,0 +1,46 @@
+Algorithm Add(C, D, n)
+{
+for(i = 0; i < n; i++)
+{
+for(j = 0; j < n; j++)
+{
+E[i, j] = C[i, j] + D[i, j];
+}
+}
+}
+TIME COMPLEXITY
+we've learnt that 'for(i = 0; i < n, i++)' ----------------- n + 1 time.
+
+In addition, we know that everything inside the loop,for(i = 0; i < n, i+ ,has n time.
+That is 'for(j = 0; j < n; j++)' -------------- n time.  
+and  E[i, j] = C[i, j] + D[i, j]; -------------  n time.
+But again, remember that 'for (j = 0; j < n; j++)' is a loop and we learned that it has n + 1 time.
+Therefore, for (j = 0; j < n; j++) ----------- n * ( n+1)
+In addition, we know that anything inside the loop, for (j = 0; j < n; j++), will be n time. So, ' E[i, j] = C[i, j] + D[i, j]' will be n time.
+Therefore, E[i, j] = C[i, j] + D[i, j] ---------------- n * n
+THEREFORE;
+Algorithm Add(C, D, n)
+{
+for(i = 0; i < n; i++)----- n + 1
+{
+for(j = 0; j < n; j++) ------ n*(n+1)
+{
+E[i, j] = C[i, j] + D[i, j]; n * n
+}
+}
+}
+Time complexity, f(n) = 2n^2  + 2n + 1   which is O(n^2)
+
+
+
+SPACE COMPLEXITY
+ What are the variables, C, D, E, n, i, j
+what are C, D, E? They are matrices. Therefore,
+C = n^2
+D = n^2
+E = n^2
+n = 1
+i = 1
+j = 1
+
+space complexity, s(n) = 3n^2 + 3     which is O(n^2)
