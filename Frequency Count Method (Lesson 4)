@@ -1,0 +1,55 @@
+Algorithm sum(D, n)
+{
+p = 0;
+for(i=0; i<n; i++) {
+p = p + D[i];
+}
+return p;
+}
+Let  say D is an array of some element
+D    9   4  10   8  3
+     0   1   2   3  4         n = 5
+  
+LET'S ANALYZE THE TIME COMPLEXITY
+p = 0; -------------  1
+i = 0; ------------- 1    NB: i = 0 executes for 1 time
+i < n; -------------- n + 1  NB: i < n will reject for n + 1 time
+Why i<n;------------ n + 1 ?
+Explanation: When  i = 0, i < n.   When i = 1, i < n. When i = 2, i < n. 
+When i = 3, i < n.  When i = 4, i < n. When i = 5, i is not less than n so it will stop. 
+i = 0 ( meaning, i was initially 0). Therefore, how many times did 'i' change; 5 times( thats, i =1, i = 2, i = 3, i = 4, i = 5. 
+ How many times did the condition, i < n is checked : 6 times. ( that's, i =0, i= 1, i=2, i =3, i =4, i = 5)
+i++;------------- n    NB: i++ repeats for n times
+Therefore, the time unit for 'for(i=0; i<n; i++)' = 1 + n+1 + n  = 2n + 2  but we use n + 1 instead. So basically, we use the time unit for the condition, i < n only.
+
+
+Whatever statement is inside the loop, since the loop is repeating n times, the 
+p = p + D[i] will also repeat n times.
+Therefore, p = p + D[i] --------- n 
+
+return p ------------ 1
+
+
+THEREFORE
+{
+p = 0;   -------------  1
+for(i=0; i<n; i++) ------  n + 1
+{
+p = p + D[i];  ----------  n
+}
+return p; -----------    1
+}
+Time function, f(n) = 2n + 3     which   is  O(n)
+
+
+
+SPACE COMPLEXITY
+variables used are D, n, p, i
+The size of D is the size of the array which is n.
+Therefore
+D ---------  n
+n ------------1
+p --------- 1
+i -------- 1
+
+Therefore space complexity, s(n) = n + 3    which  is also O(n). 
